@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../dist/js/testTesting.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Unit Testing</title>
+</head>
+
+<body style="background-color:#050504">
+  <div class="container white-text" style="width:90vw; border: 2px solid #1B263B; border-radius: 3px">
+    <div class="row">
+      <div class="col s12">
+        <div class="card center-align" style="background-color: #39393A; border: 2px solid #1B263B; border-radius: 3px; opacity:.6">
+          <div class="card-content">
+            <span class="card-title">Unit Testing</span> This site works to test your code for ECS...if you pass the test(s), you can move your task from "testing" to "done!"
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card valign-wrapper" style="background-color: #39393A; border: 2px solid #1B263B; border-radius: 3px; opacity:.6">
+          <div class="card-content">
+            <div class="input-field col s12">
+              <input placeholder="Code here" id="code" type="text" class="validate">
+              <label for="first_name">Copy and paste</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="row">
+          <div class="card center-align" style="background-color: #39393A; border: 2px solid #1B263B; border-radius: 3px; opacity:.6">
+            <div class="card-content">
+              <span class="card-title">Instructions</span>To the left, copy and paste your code for any "animal" page in your project. Click on "RUN." Below, you'll see your results.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card center-align" style="background-color: #39393A; border: 2px solid #1B263B; border-radius: 3px; opacity:.6">
+        <div class="card-content">
+          <span class="card-title">Results</span>
+          <div id="animalResults">
+            <div class="red-text" id="starterStatement">/* No code has been submitted yet */</div>
+            <div id="preLoader" style="display:none">
+              <div class="preloader-wrapper small active">
+                <div class="spinner-layer spinner-green-only">
+                  <div class="circle-clipper left">
+                    <div class="circle"></div>
+                  </div>
+                  <div class="gap-patch">
+                    <div class="circle"></div>
+                  </div>
+                  <div class="circle-clipper right">
+                    <div class="circle"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h6 class="left-align green-text" id="test1" style="display:none">Test 1: Starter Code | Passed</h6>
+            <h6 class="left-align green-text" id="test2" style="display:none">Test 2: Structure | Passed</h6>
+            <h6 class="left-align red-text" id="test3" style="display:none">Test 3: Content | Failed: Your submission is missing necessary images or text</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s4">
+        <a class="waves-effect waves-light btn" id="animRun" onclick="coinFlip();" style="background-color: #1B263B">RUN</a>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
